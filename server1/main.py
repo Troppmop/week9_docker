@@ -42,10 +42,11 @@ def add_item(name: str, quantity: int):
     item_dict.update({'id':length + 1})
     data.append(item_dict)
     save_database(data)
-    return {'message': f'item {item_dict['name']} added successfully'}
+    n = item_dict['name']
+    return {'message': f'item {n} added successfully'}
     
     
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="127.0.0.1", port=8000)

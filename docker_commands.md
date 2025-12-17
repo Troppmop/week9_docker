@@ -28,7 +28,7 @@ Fill in the Docker commands you used to complete the test.
 
 ```bash
 
-```docker run -it --name shopping-server1 -v fastapi-db:/app/db alpine sh
+```docker run -it --name shopping-server-app1 -v fastapi-db:/app/db shopping-server1:v1
 
 ## Server 2
 
@@ -36,11 +36,11 @@ Fill in the Docker commands you used to complete the test.
 
 ```bash
 
-```
+```C:\Users\Dovid\Desktop\data_army\week9\week9_docker\server2>docker build -t shopping-server2:v1 .
 
 ### Run the container
 
 ```bash
 
-```
+```docker run -it --name shopping-server-app2 -v fastapi-db:/app/db shopping-server2:v1
 
