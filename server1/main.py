@@ -2,7 +2,11 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import json
 
-DB_PATH = 'db/shopping_list.json'
+#dev db path
+#DB_PATH = 'db/shopping_list.json'
+
+#deployment db path 
+DB_PATH = 'app/db/shopping_list.json'
 
 
 def load_database() -> dict:

@@ -8,7 +8,7 @@ Fill in the Docker commands you used to complete the test.
 
 ```bash
 
-```
+```docker volume create fastapi-db
 
 ### Seed the volume (via Docker Desktop)
 
@@ -22,13 +22,13 @@ Fill in the Docker commands you used to complete the test.
 
 ```bash
 
-```
+```C:\Users\Dovid\Desktop\data_army\week9\week9_docker\server1>docker build -t shopping-server1:v1 .
 
 ### Run the container
 
 ```bash
 
-```
+```docker run -it --name shopping-server1 -v fastapi-db:/app/db alpine sh
 
 ## Server 2
 
